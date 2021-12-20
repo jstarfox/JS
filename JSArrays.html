@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Javascript Arrays</title>
+        <script>
+            //Arrays
+            var weekdays = ["sun", "mon", "tue", "wed", "thur", "fri", "sat"];
+            console.log(weekdays)
+            console.log(typeof weekdays)
+            console.log("Length = "+ weekdays.length)
+
+            //Mixed Array and empty array values
+            var myArray = [1, 2.3, "Jordan", true,,,'11']
+            console.log(myArray)
+            console.log(myArray.length)
+
+            //Dynamic Array
+            var myDynamic = []
+            console.log(myDynamic)
+            console.log(myDynamic.length)
+
+            //Adding elements
+            myDynamic[0] = "Wolf"
+            myDynamic[1] = "Sheep"
+            myDynamic[2] = "Tiger"
+            myDynamic[3] = ""
+            myDynamic[4] = "Monkey"
+
+
+            console.log(myDynamic)
+
+            //Delete an element
+            delete myDynamic[1]
+            console.log(myDynamic)
+
+            //Add an element
+            myDynamic[1] = "Sheep"
+            console.log(myDynamic)
+
+            //Push an element
+            myDynamic.push("Snake")
+            console.log(myDynamic)
+            console.log(myDynanic.length)
+
+            //Pop an element
+            myDynamic.pop()
+            console.log(myDynamic)
+            console.log(myDynamic.length)
+
+            //add an item in front
+            myDynamic.unshift("Snake")
+            console.log(myDynamic)
+            console.log(myDynamic.length)
+
+            //Removing an item in front
+            myDynamic.shift()
+            console.log(myDynamic)
+            console.log(myDynamic.length)
+
+            //Negative Statements
+            myDynamic[-5] = "Hello"
+            console.log(myDynamic)
+            console.log(myDynamic.length)
+
+            //Delete an element
+            delete myDynamic[-5]
+            console.log(myDynamic)
+
+            //Traversing through the array with for-loop using array index
+            for (var i=0; i <myDynamic.length;i++) {
+                console.log("Array index" + myDynamic[i])
+            }
+
+            //Traversing through the array with for-loop-index using in
+            for (var i in myDynamic) {
+                console.log("Array in " + i + " contains: " + myDynamic[i])
+            }
+
+            //Traversing through the array with for-item-of using in
+            for (var i of myDynamic) {
+                console.log("Array item " + item)
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <h1>Welcome to JS Arrays</h1>
+    </body>
+</html>

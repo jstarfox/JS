@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Javascript Variables</title>
+        <script>
+            function myfunction() {
+            var username = prompt("Enter your name","");
+            if(confirm("Your name is" + username)) {
+                // document.write("<h1>Hello"+ username + "</h1>");
+                // alert("<h1>Hello"+ username + "</h1>");
+                console.log("<h1>Hello"+ username + "</h1>");
+            }else{
+                // document.write("Hello World");
+                // alert("Hello World");
+                console.log("Hello World");
+            }
+        }
+        </script>
+
+    </head>
+    <body onload="myfunction()">
+        <h1>Js using prompt and confirm boxes</h1>
+    </body>
+</html>

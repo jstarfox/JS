@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Javascript Variables</title>
+        <script>
+            // isNan
+            console.log(isNaN(123));
+            console.log(isNaN('123'));
+            console.log(isNaN('123.34'));
+            console.log(isNaN(123.34));
+
+            //Fixed
+            var num = 123.456
+            console.log(num);
+            console.log(num.toFixed(2));
+
+            //Arithmetic operations
+            console.log(11+22);
+            console.log('11' + '22'); //operator overload
+            console.log('Hello' + 22);
+            console.log('Hello' + '22');
+            console.log(11-22);
+            console.log('11'-'22');
+            console.log(11*22);
+            console.log('11'*'22');
+            console.log('Hello' * 22);
+            console.log('Hello'-'22');
+
+            // Built-in Functions - parseInt, parseFloat, number
+            var num = "11"
+            console.log(num + 22);
+            console.log(parseInt(num) + "22");
+            console.log(parseInt(num) + parseFloat("22.33"));
+            console.log(parseInt("10Jordan10"));
+
+            console.log(Number(num) + "22");
+
+            console.log(new Date(2021, 8, 10, 12, 5, 6));
+
+            //String functions
+            console.log("String 1\n  String 2");
+
+            //Comparing Numbers
+            var num = 8
+            console.log(num==8)
+            console.log(num===8)
+            console.log(num==='8')
+            console.log(num<'8')
+
+            //Comparing Strings
+            console.log('num'<'9')
+            console.log('Hello'<'Hi')
+
+            //Logical
+            console.log(num<9 && num>5)
+            console.log(num<8 || num>5)
+                console.log(!num<8)
+
+
+
+        </script>
+
+    </head>
+    <body>
+        <h1>Js using prompt and confirm boxes</h1>
+    </body>
+</html>

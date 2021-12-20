@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Javascript scope</title>
+        <script>
+            //Scenario I - Global Variables
+            var gvar = "Jordan"
+            function sayHello(){
+                var lvar = "Hello"
+                console.log("From Function" + gvar)
+                console.log("From Function" + lvar)
+                return lvar
+            }
+            
+            //Scenario II - Global variables
+            for (var i=0; i < 5; i++) {
+                var msg = "Hi"
+                console.log(i)
+            }
+
+            //Scenario III - Global variables - Block scope
+            for (let j=0; j < 5; j++) {
+                let msg = "Hi"
+                console.log(i)
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <h1>Welcome to JS scope</h1>
+        <script> 
+            sayHello();    
+            console.log("From html body" + gvar)
+            // console.log("From html body" + lvar) //in block-scope
+
+            //Scenario II - Global variables
+            console.log(i); // not in block-scope
+            console.log(msg);
+
+            //Scenario III - Global variables - Block scope
+            console.log(j); //  in block scope but usage of let
+            console.log(msg1);
+
+
+        </script>
+    </body>
+</html>

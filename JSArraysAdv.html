@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Javascript Arrays Advanced</title>
+        <script>
+           //Arrays
+           var spices = ['curry', 'paprika', 'tumeric', 'chil', 'oregano' ];
+           console.log("Array: " + spices);
+
+           //reverse
+           console.log("Reversed: " + spices.reverse());
+
+            //sort
+            console.log("sort: " + spices.sort());
+
+            //join
+           console.log("join: " + spices.join("|"));
+           console.log("join: " + spices.join());
+
+            //split
+            str = "clove |*| cinnamon |*| garlic powder"
+            var spicesExtra = str.spliy('|');
+            console.log("String Split: " + spicesExtra);
+
+            //concat arrays
+            var spucesExtra = spices.concat('nutemg, star anise');
+            console.log("Spices Extra: " + spicesExtra);
+            console.log("Spices Extra: " + spices);
+
+           /* //slice arrays
+            console.log("Spices Slice: " + spices.slice(1,4));
+            console.log(spices);
+
+            //slice arrays
+            console.log("Spices Slice: " + spices.splice(2,2,'nutmeg', 'star anise', 'cardamom'));
+            console.log(spices);
+
+            //var search item 
+            var searchItem= 'clove'
+            var idx = spices.IndexOf(searchItem)
+            consle.log(idx);
+
+            var searchItem= 'nutmeg'
+            var idx = spices.IndexOf(searchItem, idx+1)
+            consle.log(idx);
+
+            // var searchItem= 'clove'
+            console.log(spices.indexOf("nutmeg")) // first occurence of item
+            console.log(spices.lastIndexOf("nutmeg")) // last occurence
+
+            //iteration of arrays
+            spices.forEach(function (item){
+                console.log(item)
+            }) */
+
+            //Associative arrays
+            var spices = {
+                name: "Nutmeg",
+                quantity: 10, 
+                isSpicy: true
+            }
+            console.log(spices);
+
+            spices['color'] = "brown"
+            console.log(spices);
+
+            for(key in spices)
+                console.log("Values for each " + key +" is " +spices[key]); 
+        </script>
+
+    </head>
+    <body>
+        <h1>Welcome to JS Arrays Advanced</h1>
+    </body>
+</html>
